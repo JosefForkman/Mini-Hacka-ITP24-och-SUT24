@@ -30,7 +30,7 @@ body {
     max-width: 768px;
     min-height: 300px;
     display: grid;
-    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
@@ -52,7 +52,6 @@ body {
     display: flex;
     width: 100%;
     height: 100%;
-    /* background-color: #fff; */
     border-radius: 15px;
     padding: 20px;
     -webkit-border-radius: 15px;
@@ -91,7 +90,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 6rem;
-    background-color: dimgray;
+    background-color: magenta;
     color: white;
     border-radius: 15px;
     cursor: pointer;
@@ -103,7 +102,17 @@ body {
 }
 
 .expanded a {
-    
+    text-decoration: none;
+    color: white;
+}
+
+.expanded a:hover {
+    color: black;
+}
+
+.expanded .back-button:hover {
+    color: darkred;
+    font-weight: bold;
 }
 
 .back-button {
