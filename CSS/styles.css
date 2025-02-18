@@ -66,7 +66,10 @@ main {
 }
 
 .toollinks a {
-    font-size: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    text-align: center;
 }
 
 .toollinks h2 {
@@ -81,6 +84,7 @@ main {
     padding-top: 4px;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .contactinfo {
@@ -109,4 +113,9 @@ main {
 
 .contactinfoperson p{
     padding-top: 12px;
+}
+
+.icons {
+    height: 30px;
+    width: 30px;
 }
