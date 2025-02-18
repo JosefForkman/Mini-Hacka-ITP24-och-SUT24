@@ -1,27 +1,25 @@
-function showOption(option) {
-    const continer = document.getElementById("grids");
-
-    let newContent = '';
-
-    if (option === 'itp') {
-        newContent = `
-         <a href="./HTML/itp24.html" class="grid-item">ITP24</a> 
+function showOption(category) {
+    if (category === 'itp') {
+        document.getElementById('itp-grid').innerHTML = `
+            <div class="expanded">
+                <a href="itp24.html" class="option">ITP24</a>
+                <div class="back-button" onclick="restoreBox('itp')">&times;</div>
+            </div>
         `;
-    } else if (option === "sut") {
-        newContent = `
-         <a href="./HTML/sut24.html" class="grid-item">SUT24</a> 
+    } else if (category === 'sut') {
+        document.getElementById('sut-grid').innerHTML = `
+            <div class="expanded">
+                <a href="sut24.html" class="option">SUT24</a>
+                <div class="back-button" onclick="restoreBox('sut')">&times;</div>
+            </div>
         `;
     }
-
-    continer.innerHTML = `
-        ${newContent}
-        <div class="back-button" onclick="restoreGrid()>Tillbaka</div>
-    `;
 }
 
-function restoreGrid() {
-    document.getElementById("grids").innerHTML = `
-        <div class="grid-item" onclick="showOption('itp')">ITP</div>
-        <div class="grid-item" onclick="showOption('sut')">SUT</div>
-    `;
+function restoreBox(category) {
+    if (category === 'itp') {
+        document.getElementById('itp-grid').innerHTML = `<button class="grid-item" onclick="showOption('itp')">ITP</button>`;
+    } else if (category === 'sut') {
+        document.getElementById('sut-grid').innerHTML = `<button class="grid-item" onclick="showOption('sut')">SUT</button>`;
+    }
 }
