@@ -3,3 +3,62 @@
     padding: 0;
     border: 0;
 }
+
+
+.index-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f1f1f1;
+}
+
+.index-container .hirro {
+    display: flex;
+    flex-direction: column;
+}
+
+.index-container .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .index-container .container {
+        grid-template-columns: 1fr;
+    }
+    
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid red;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+/* .modal  {
+    visibility: hidden;
+    border: 2px solid green;
+    z-index: 100;
+}
+
+.modal:target {
+    visibility: visible;
+} */
+
+dialog {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+}

@@ -1,14 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="CSS/styles.css" />
+        <title>Document</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <body>
+        <main class="index-container">
+            <div class="hirro">
+                <h1>Välkommen till Skolportalen</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    itaque fuga reiciendis error quod dolore quia voluptate id
+                    ducimus sequi.
+                </p>
+            </div>
+            <section class="container">
+                <!-- <div
+                    class="card"
+                    id="ITP-dialog">
+                    <button>ITP</button>
+                    <dialog
+                        id="#itp"
+                        class="modal">
+                        <div class="modal-content">
+                            <h3>Modal</h3>
+                            <a href="HTML/itp24.html">ITP24</a>
+                            <form method="dialog">
+                                <button>Close</button>
+                            </form>
+                        </div>
+                    </dialog>
+                </div>
+                <div
+                    class="card"
+                    id="sut-dialog">
+                    <button>SUT</button>
+                    <dialog
+                        id="#sut"
+                        class="modal">
+                        <div class="modal-content">
+                            <h2>Modal</h2>
+                            <a href="HTML/sut24.html">SUT24</a>
+                            <form method="dialog">
+                                <button>Close</button>
+                            </form>
+                        </div>
+                    </dialog>
+                </div> -->
 
-<body>
-
-</body>
-
+                <div
+                    class="grid-container"
+                    id="grids">
+                    <button
+                        class="grid-item"
+                        onclick="showOption('itp')">
+                        ITP
+                    </button>
+                    <button
+                        class="grid-item"
+                        onclick="showOption('sut')">
+                        SUT
+                    </button>
+                </div>
+            </section>
+        </main>
+        <script src="JS/script.js"></script>
+    </body>
 </html>
