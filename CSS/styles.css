@@ -1,12 +1,9 @@
+/* Reset margin, padding, and border */
 * {
+    font-family: garamond;
     margin: 0;
     padding: 0;
     border: 0;
-}
-
-body {
-    font-family: sans-serif;
-    background-color: silver;
 }
 
 main {
@@ -118,4 +115,110 @@ main {
 .icons {
     height: 30px;
     width: 30px;
+}
+/* Set background */
+body {
+    background-color: silver;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header section */
+.index-container .hirro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-color: silver;
+}
+
+/* Main container for the grid */
+.index-container .container {
+    margin: 20px 40px;
+    width: 80%;
+    max-width: 768px;
+    min-height: 300px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 10px;
+}
+
+/* Responsive: Stack elements on small screens */
+@media (max-width: 768px) {
+    .index-container .container {
+        grid-template-columns: 1fr;
+        min-height: 600px;
+        max-width: 600px;
+        
+    }
+    .grid-container .grid-item {
+        font-size: 5rem;
+    }
+}
+
+/* Grid container */
+.grid-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    /* background-color: #fff; */
+    border-radius: 15px;
+    padding: 20px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/* Ensure buttons fill their container */
+.grid-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    background-color: dimgray;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+/* Button hover effect */
+.grid-item:hover {
+    background-color: magenta;
+}
+.expanded {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    background-color: dimgray;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+.expanded a {
+    
+}
+
+.back-button {
+    position: fixed;
+    align-self: flex-start;
+    align-items: flex-end;
+    margin-left: auto;
 }

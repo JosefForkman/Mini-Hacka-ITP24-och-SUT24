@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="CSS/styles.css" />
+        <title>Document</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-</body>
-
+    <body>
+        <main class="index-container">
+            <div class="hirro">
+                <h1>Välkommen till Skolportalen</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    itaque fuga reiciendis error quod dolore quia voluptate id
+                    ducimus sequi.
+                </p>
+            </div>
+            <section class="container">
+                <div class="grid-container" id="itp-grid">
+                    <button class="grid-item" onclick="showOption('itp')">ITP</button>
+                </div>
+                <div class="grid-container" id="sut-grid">
+                    <button class="grid-item" onclick="showOption('sut')">SUT</button>
+                </div>
+            </section>
+        </main>
+        <script src="JS/script.js"></script>
+    </body>
 </html>
