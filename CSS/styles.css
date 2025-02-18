@@ -3,3 +3,110 @@
     padding: 0;
     border: 0;
 }
+
+body {
+    font-family: sans-serif;
+    background-color: silver;
+}
+
+main {
+    display: flex;
+    padding-top: 3rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: gray;
+}
+
+.navbar a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+
+.navbartext {
+    font-size: 25px;
+    color: lightgray;
+}
+
+.material-symbols-outlined {
+    color: lightgray;
+    font-size: 30px;
+}
+
+.toolgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.lasttool {
+    grid-column: 2;
+}
+
+.toollinks {
+    text-align: center;
+}
+
+.toollinks a {
+    font-size: 20px;
+}
+
+.toollinks h2 {
+    font-size: 25px;
+}
+
+.Resources {
+    padding-top: 1rem;
+}
+
+.resourcescontainer {
+    padding-top: 4px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactinfo {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.contactinfoperson {
+    padding-top: 2rem;
+}
+
+.contactinfoperson img {
+    display: flex;
+    width: 22rem;
+    height: 22rem;
+}
+
+.contactinfoperson h3 {
+    padding-top: 20px;
+}
+
+.contactinfoperson h4{
+    padding-top: 10px;
+}
+
+.contactinfoperson p{
+    padding-top: 12px;
+}
